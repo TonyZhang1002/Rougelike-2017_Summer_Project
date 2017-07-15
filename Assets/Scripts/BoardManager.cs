@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class NewBehaviourScript : MonoBehaviour {
+public class BoardManager : MonoBehaviour {
 
 	[Serializable]
 	public class Count
@@ -48,12 +48,11 @@ public class NewBehaviourScript : MonoBehaviour {
 		for (int i = -1; i < columns + 1; i++) {
 			for (int j = -1; j < rows + 1; j++) {
 				GameObject toInstantiate = floorTiles [Random.Range (0, floorTiles.Length)];
-				if(i == -1 || i == columns || j == -1 || j == rows ){
-					toInstantiate = outerWallTiles[Random.Range (0, outerWallTiles.Length)];
-
-					GameObject instance = Instantiate(toInstantiate,new Vector3(i,j,0f),Quaternion.identity) as GameObject;
-					instance.transform.SetParent(boardHolder);
+				if (i == -1 || i == columns || j == -1 || j == rows) {
+					toInstantiate = outerWallTiles [Random.Range (0, outerWallTiles.Length)];
 				}
+				GameObject instance = Instantiate(toInstantiate,new Vector3(i,j,0f),Quaternion.identity) as GameObject;
+				instance.transform.SetParent(boardHolder);
 			}
 		}
 	}

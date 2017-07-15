@@ -2,7 +2,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BoardManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/BoardManager.cs" Line="50" Column="15" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="7" Column="27" />
+      <File FileName="Assets/Scripts/BoardManager.cs" Line="55" Column="5" />
+      <File FileName="Assets/Scripts/Loader.cs" Line="14" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
